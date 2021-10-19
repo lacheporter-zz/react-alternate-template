@@ -18,10 +18,7 @@ html {
   font-weight: normal;
   font-family: "Poppins", sans-serif;
 }
-body {
-  max-width: 800px;
-  margin: 50px auto;
-}
+
 .react-slideshow-container {
   padding: 0rem 0rem 0rem 4rem;
   width: 100%;

@@ -8,7 +8,7 @@ import styles from "./Lesson.module.css";
 import Modal from "../components/Layout/Modal";
 import { lessonList } from "../data/LessonList";
 import { lessons, quizzes } from "../data/LessonList";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.png";
 
 export default function Lesson({ lesson }) {
   //state management
