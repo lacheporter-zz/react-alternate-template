@@ -1,0 +1,162 @@
+.standardGrid {
+  padding: 1rem;
+  height: calc(100vh - 120px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.7fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas:
+    "title title title picture picture"
+    "content content content picture picture "
+    "content content content picture picture";
+}
+.wideGrid {
+  padding: 1rem;
+  height: 650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.7fr 1fr;
+  gap: 5px 5px;
+  align-items: center;
+  grid-template-areas:
+    "title title title title title"
+    "content content content content content "
+    "content content content content content";
+}
+.title {
+  grid-area: title;
+  padding: 1rem;
+  align-self: center;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+/* TERMS */
+.termsRow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  overflow: scroll;
+}
+.termsColumn {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+.termsDefinition {
+  width: 100%;
+  padding: 1em;
+}
+.termsBtn {
+  background-color: var(--primary-color);
+  margin: 0.25em;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 1em;
+  font-size: 1em;
+}
+.termsBtn:hover {
+  opacity: 0.9;
+}
+.content {
+  grid-area: content;
+  padding: 1rem;
+  overflow: scroll;
+}
+.contentList {
+  font-size: 1em;
+  padding: 0.25rem;
+}
+.contentListItem {
+  font-size: 1em;
+  padding: 0.25rem;
+}
+.mapInfo {
+  position: absolute;
+  bottom: 12%;
+  z-index: 5;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.25rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.picture {
+  grid-area: picture;
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  align-self: auto;
+  overflow: scroll;
+}
+.exitTitle {
+  padding: 2rem 0rem;
+}
+.exitLink {
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 650px) {
+  .wideGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    grid-template-areas:
+      "title"
+      "content";
+  }
+
+  .standardGrid {
+    max-height: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.8fr;
+    gap: 10px;
+    grid-template-areas:
+      "title"
+      "content "
+      "picture ";
+  }
+  .title {
+    font-size: 1em;
+    border: solid 1px rgba(0, 0, 0, 0.25);
+  }
+  .content {
+    border: solid 1px rgba(0, 0, 0, 0.25);
+    font-size: 0.75em;
+  }
+  .picture {
+    grid-area: picture;
+    position: relative;
+    height: 70%;
+    border: solid 1px rgba(0, 0, 0, 0.25);
+    overflow: scroll;
+  }
+  .contentList {
+    font-size: 1em;
+    padding: 0.25rem;
+    margin-left: 1rem;
+  }
+  .contentListItem {
+    font-size: 1em;
+    padding: 0.25rem;
+  }
+  .termsRow {
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 0rem;
+  }
+  .termsDefinition {
+    border: none;
+  }
+}

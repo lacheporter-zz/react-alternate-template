@@ -1,0 +1,28 @@
+.checkbox {
+  background: whitesmoke;
+  position: relative;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border-radius: 0.25rem;
+}
+.checkbox:checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "\02713";
+  background: var(--green);
+  color: white;
+}
+.checkbox:checked:after {
+  content: "\02713";
+  font-size: 1rem;
+}
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0.5rem 0rem;
+}

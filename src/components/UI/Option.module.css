@@ -1,0 +1,26 @@
+.optionsItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  color: gold;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.optionsLink,
+.optionsItem p {
+  text-decoration: none;
+  padding: 0rem 1rem;
+  color: gold;
+}
+.optionsItem:hover,
+.optionsLink:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 650px) {
+  .optionsLink,
+  .optionsItem p {
+    /* display: none; */
+  }
+}

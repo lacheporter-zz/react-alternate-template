@@ -1,0 +1,63 @@
+.slide {
+  background-color: transparent;
+  width: 100%;
+  height: inherit;
+}
+.slideTitle {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+.slideBtns {
+  position: absolute;
+  display: flex;
+  padding: 1rem;
+  right: 0px;
+  bottom: 0px;
+  z-index: 15;
+}
+
+.title {
+  grid-area: title;
+  padding: 1rem;
+  align-self: center;
+}
+.content {
+  grid-area: content;
+  padding: 1rem;
+  overflow: scroll;
+}
+.contentList {
+  font-size: 1em;
+  padding: 0.25rem;
+}
+.contentListItem {
+  font-size: 1em;
+  padding: 0.25rem;
+}
+.picture {
+  grid-area: picture;
+  position: relative;
+  height: 75%;
+  padding: 1rem;
+  align-self: auto;
+  overflow: scroll;
+}
+.exitTitle {
+  padding: 2rem 0rem;
+}
+.exitLink {
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: var(--primary-color);
+}
+@media only screen and (max-width: 650px) {
+  .slideContainer {
+    background-color: transparent;
+    width: 96%;
+    height: inherit;
+  }
+}

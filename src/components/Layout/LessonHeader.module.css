@@ -1,0 +1,34 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 120px;
+  z-index: 10;
+}
+.headerTitle {
+  display: inline;
+  letter-spacing: 2px;
+  color: var(--tertiary-color);
+}
+.headerSubtitle {
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 650px) {
+  .headerTitle {
+    display: inline;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    color: var(--tertiary-color);
+  }
+  .headerSubtitle {
+    font-size: 1.25em;
+    color: var(--secondary-color);
+  }
+}

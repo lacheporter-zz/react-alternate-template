@@ -1,0 +1,56 @@
+{
+  "name": "L436C",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://ssilrc.army.mil/resources/FMS/GFEBS/L436C/html/",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "pipwerks-scorm-api-wrapper": "^0.1.2",
+    "react": "^17.0.2",
+    "react-circular-progressbar": "^2.0.4",
+    "react-confetti": "^6.0.1",
+    "react-dom": "^17.0.2",
+    "react-image-slideshow": "^1.5.4",
+    "react-img-mapper": "^1.2.2",
+    "react-quiz-component": "^0.3.8",
+    "react-router-dom": "^5.2.0",
+    "react-scorm-provider": "^0.2.4",
+    "react-scripts": "4.0.3",
+    "react-slideshow-image": "^3.5.0",
+    "react-tooltip": "^4.2.21",
+    "simple-scorm-packager": "^0.2.5",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3"
+  }
+}

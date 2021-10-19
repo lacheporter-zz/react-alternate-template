@@ -1,0 +1,96 @@
+.progressBarCounter {
+  padding: 1em;
+  margin-left: 10px;
+  font-size: 1.25em;
+}
+.progressBarContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.progressBarMeter {
+  height: 15px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  background-color: #e9ecef;
+  border-radius: 0.5rem;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+  width: 175px;
+  z-index: 10;
+}
+.progressBarFill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 50px;
+  background: var(--green);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  transition: width 0.6s ease;
+}
+.progressBarAnimated {
+  -webkit-animation: 1s linear infinite progress-bar-stripes;
+  animation: 1s linear infinite progress-bar-stripes;
+}
+
+.progressCircleContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--white);
+  padding: 1em;
+}
+.progressCircle {
+  height: 150px;
+  padding: 1em;
+}
+.progressCircleHeading {
+  height: inherit;
+  padding: 1em;
+  text-align: center;
+  flex-direction: column;
+}
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar {
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .progressBarAnimated {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .progressContainer {
+    justify-content: space-between;
+  }
+  .progressBarMeter {
+    width: 100px;
+  }
+  .progressBarCounter {
+    display: none;
+  }
+  .progressCircleContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  .progressCircleHeading p {
+    display: none;
+  }
+  .progressCircleHeading h2 {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary-color: #1a1e2b;
+  --secondary-color: #f3d00b;
+  --green: linear-gradient(135deg, #51cf2e 0%, #61e661 100%);
+  --gold: linear-gradient(135deg, #f8d800 0%, #f1de5e 100%);
+  --white: white;
+  --black: black;
+  --font: "Poppins";
+}
+html {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background: grey;
+}
+.react-slideshow-container {
+  padding: 0rem 0rem 0rem 4rem;
+  width: 100%;
+  height: calc(100vh - 120px);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  background-color: white;
+}
+.slide {
+  position: relative;
+  height: inherit;
+  overflow: hidden;
+}
+.react-slideshow-wrapper .images-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
