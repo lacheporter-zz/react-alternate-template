@@ -1,7 +1,7 @@
 {
-  "name": "react-lesson-template",
+  "name": "react-elearning-template",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
