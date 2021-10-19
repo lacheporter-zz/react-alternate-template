@@ -23,7 +23,7 @@ const SlideBlocks = (props) => {
   //link block
   const Link = ({ text, path }) => {
     return (
-      <a href={path} target="_blank">
+      <a href={path} target="_blank" rel="noreferrer">
         {text}
       </a>
     );
