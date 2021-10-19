@@ -6,9 +6,9 @@ import Slideshow from "../components/Layout/Slideshow";
 import OptionPanel from "../components/Layout/OptionPanel";
 import styles from "./Lesson.module.css";
 import Modal from "../components/Layout/Modal";
-import { lessonList } from "../data/index";
+import { lessonList } from "../data/LessonList";
+import { lessons, quizzes } from "../data/LessonList";
 import logo from "../assets/logo.svg";
-import { lessons, quizzes } from "../data/index";
 
 export default function Lesson({ lesson }) {
   //state management

@@ -1,5 +1,4 @@
 import placeholder from "../assets/placeholder.svg";
-
 const imageSize = "100%";
 
 const Lesson1Data = [
@@ -10,7 +9,7 @@ const Lesson1Data = [
       {
         type: "paragraph",
         tag: "lesson",
-        text: "Slide text information.",
+        text: "Slide text information for lesson 1.",
       },
       {
         type: "space",
@@ -18,13 +17,12 @@ const Lesson1Data = [
       },
       {
         type: "paragraph",
-        text: "The purpose of this lesson is to provide training.",
+        text: "Providing tags in the object model will bold those words.",
       },
     ],
     image: placeholder,
     width: imageSize,
   },
-
   {
     title: "Slide Title",
     layout: "standard",
@@ -76,7 +74,6 @@ const Lesson1Data = [
   },
 
   {
-    index: 5,
     title: "Slide List",
     layout: "standard",
     content: [
@@ -132,7 +129,7 @@ const Lesson1Data = [
       },
     ],
   },
-  //checkpoint
+
   {
     title: "Checkpoint",
     content: [
@@ -145,9 +142,9 @@ const Lesson1Data = [
     width: "75%",
   },
 ];
+//QUIZ//
 const Lesson1Quiz = {
   questions: [
-    //multiple choice
     {
       question: "What color is an apple?",
       answers: ["Blue", "Red", "Purple", "Rainbow"],
@@ -157,7 +154,7 @@ const Lesson1Quiz = {
       messageForCorrectAnswer: "Correct answer. Good job.",
       messageForIncorrectAnswer: "Incorrect answer. Please try again.",
     },
-    //true or false
+
     {
       question: "The answer to this question is true.",
       questionType: "text",

@@ -5,29 +5,22 @@
   margin: 0;
 }
 :root {
-  --primary-color: #1a1e2b;
+  --primary-color: rgb(31, 132, 233);
   --secondary-color: #f3d00b;
   --green: linear-gradient(135deg, #51cf2e 0%, #61e661 100%);
   --gold: linear-gradient(135deg, #f8d800 0%, #f1de5e 100%);
   --white: white;
-  --black: black;
+  --black: rgb(31, 31, 31);
   --font: "Poppins";
 }
 html {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
   font-family: "Poppins", sans-serif;
 }
-::-webkit-scrollbar {
-  width: 12px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 0.5rem;
-  background: grey;
+body {
+  max-width: 800px;
+  margin: 50px auto;
 }
 .react-slideshow-container {
   padding: 0rem 0rem 0rem 4rem;
@@ -41,7 +34,7 @@ html {
   display: -ms-flexbox;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  background-color: white;
+  background-color: var(white);
 }
 .slide {
   position: relative;
@@ -55,3 +48,14 @@ html {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+/* ::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background: transparent;
+} */

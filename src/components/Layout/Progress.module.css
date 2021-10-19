@@ -13,9 +13,8 @@
   position: relative;
   display: flex;
   overflow: hidden;
-  background-color: #e9ecef;
-  border-radius: 0.5rem;
-  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+  background-color: var(--white);
+  border-radius: 50px;
   width: 175px;
   z-index: 10;
 }
@@ -24,7 +23,6 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  color: #fff;
   text-align: center;
   white-space: nowrap;
   border-radius: 50px;
@@ -42,19 +40,19 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
-  color: var(--white);
   padding: 1em;
 }
 .progressCircle {
   height: 150px;
   padding: 1em;
+  color: var(--white);
 }
 .progressCircleHeading {
   height: inherit;
   padding: 1em;
   text-align: center;
   flex-direction: column;
+  color: var(--white);
 }
 @media (prefers-reduced-motion: reduce) {
   .progress-bar {
