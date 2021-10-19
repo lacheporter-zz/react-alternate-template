@@ -26,31 +26,31 @@ const quizzes = {
 };
 const lessonList = [
   {
-    title: `Introduction`,
+    title: `Lesson Title`,
     subtitle: "Lesson #1",
   },
   {
-    title: `Overview`,
+    title: `Lesson Title`,
     subtitle: "Lesson #2",
   },
   {
-    title: `Human Resource And Payroll Administration`,
+    title: `Lesson Title`,
     subtitle: "Lesson #3",
   },
   {
-    title: `Payroll Data Flow`,
+    title: `Lesson Title`,
     subtitle: "Lesson #4",
   },
   {
-    title: `Maintain Master Employee Records`,
+    title: `Lesson Title`,
     subtitle: "Lesson #5",
   },
   {
-    title: "HR Reports",
+    title: "Lesson Title",
     subtitle: "Lesson #6",
   },
   {
-    title: "Review Course",
+    title: "Review",
     subtitle: "Lesson 7",
   },
 ];

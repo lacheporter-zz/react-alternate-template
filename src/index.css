@@ -23,7 +23,7 @@ html {
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: white;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 0.5rem;

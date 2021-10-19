@@ -1,8 +1,8 @@
 {
-  "name": "L436C",
+  "name": "react-elearning-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ssilrc.army.mil/resources/FMS/GFEBS/L436C/html/",
+  "homepage": "/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",

@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { ProgressCircle } from "../components/Layout/Progress";
 import styles from "./CourseMenu.module.css";
-import crest from "../assets/fm_crest.png";
-import gfebs from "../assets/WhiteGFEBS.svg";
+import logo from "../logo.png";
 import Checkbox from "../components/UI/Checkbox";
 
 export default function CourseMenu(props) {
@@ -32,10 +31,10 @@ export default function CourseMenu(props) {
       <div className={styles.container}>
         <div className={styles.course}>
           <div className={styles.courseHeading}>
-            <img src={crest} alt="ssi logo" className={styles.menuLogo} />
+            <img src={logo} alt="logo" className={styles.menuLogo} />
             {/* <img src={gfebs} alt="gfebs logo" className={styles.menuLogo} /> */}
-            <h1 className={styles.courseTitle}>Welcome to GFEBS L436C</h1>
-            <h2 className={styles.courseSubtitle}>Human Resource and Payroll Administration</h2>
+            <h1 className={styles.courseTitle}>Welcome to Demo Course </h1>
+            <h2 className={styles.courseSubtitle}>Course Subtitle</h2>
           </div>
         </div>
         <div className={styles.progress}>
