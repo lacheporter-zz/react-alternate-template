@@ -1,0 +1,122 @@
+.container {
+  display: grid;
+  padding: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 1fr;
+  gap: 10px 10px;
+  height: 100vh;
+  grid-template-areas:
+    "course course progress"
+    "lessons lessons lessons"
+    "lessons lessons lessons";
+}
+
+.course {
+  grid-area: course;
+  background-color: var(--primary-color);
+  border-radius: 0.25em;
+}
+.courseHeading {
+  color: var(--white);
+  text-align: center;
+  padding: 2em;
+}
+.courseTitle {
+  color: white;
+}
+.courseSubtitle {
+  color: gold;
+}
+.progress {
+  grid-area: progress;
+  background-color: var(--primary-color);
+  border-radius: 0.25em;
+}
+.lessons {
+  grid-area: lessons;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-radius: 0.25em;
+}
+.lessonsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menuTitle h1 {
+  font-size: 1.75em;
+}
+.menuTitle h2 {
+  font-size: 1.5em;
+  color: var(--secondary-color);
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  width: 70%;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: left;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 0.25em;
+}
+.cardTitle {
+  color: var(--white);
+  font-size: 1.5em;
+}
+.cardSubtitle {
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+}
+.cardLink {
+  text-decoration: none;
+}
+.card:hover,
+.card:focus,
+.card:active {
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.menuLogoContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.menuLogo {
+  max-height: 120px;
+  padding: 0.5rem;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 650px) {
+  .courseTitle,
+  .courseSubtitle {
+    font-size: 1em;
+  }
+
+  .menuLogo {
+    width: 75px;
+    height: 75px;
+  }
+}
